@@ -1,7 +1,7 @@
 import React from "react";
 import "./about.css";
-// import Abouting from "../../assets/about.jpg"; 
-// import CV from "../../Assets/John-Cv.pdf";
+import AboutImg from "../Assets/home_img.png"; 
+import CV from "../Assets/Swayam.pdf";
 import Info from "./Info"
 
 const About = ()=> {
@@ -10,15 +10,11 @@ const About = ()=> {
             <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My Introduction</span>
             <div className="about__container container grid">
+              <img src={AboutImg} alt="" className="about__img"></img>
                 <div className="about__data">
                     <Info/>
                     <p className="about__description">Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
-                    
-                    
-                    {/*href={CV} likhna hai */}
-
-
-                    <a download="" href="" className="button button--flex">Download CV
+                    <a download="" href={CV} className="button button--flex">Download CV
                     <svg
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"

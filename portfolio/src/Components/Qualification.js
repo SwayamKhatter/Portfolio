@@ -1,10 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import "./qualification.css"
 
 const Qualification = () => {
-    const [toggleState, setToggleState]= useState(1);
+    const [toggleState, setToggleState] = useState(1);
 
-    const toggleTab= (index) => {
+    const toggleTab = (index) => {
         setToggleState(index);
     }
     return (
@@ -14,7 +14,7 @@ const Qualification = () => {
             <div className="qualification__container container">
                 <div className="qualification__tabs">
                     <div className={toggleState === 1 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}
-                    onClick={() => toggleTab(1)}>
+                        onClick={() => toggleTab(1)}>
                         <i className="uil uil-graduation-cap qualification__icon"></i> Education
                     </div>
                     <div className={toggleState === 2 ? "qualification__button qualification__active button--flex" : "qualification__button button--flex"}>
@@ -24,9 +24,11 @@ const Qualification = () => {
 
                 <div className="qualification__sections">
                     <div className={toggleState === 1 ? "qualification__content qualification__content-acive" : "qualification__content"}
-                    onClick={() => toggleTab(2)}>
+                        onClick={() => toggleTab(2)}>
                         <div className="qualification__data">
-                            <div>
+                            <div data-aos="fade-right"
+                                data-aos-duration="1800"
+                                data-aos-easing="ease-in-out">
                                 <h3 className="qualification__title">Bachlor's of Technology</h3>
                                 <span className="qualification__subtitle">University of Engineering and Management, Jaipur</span>
                                 <div className="qualification__calender">
@@ -48,7 +50,10 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
 
-                            <div>
+                            <div data-aos="fade-left"
+                                data-aos-duration="1800"
+                                data-aos-easing="ease-in-out"
+                                data-aos-delay='100'>
                                 <h3 className="qualification__title">12th</h3>
                                 <span className="qualification__subtitle">Vishva Bharti Public School, Jagadhri</span>
                                 <div className="qualification__calender">
@@ -93,7 +98,7 @@ const Qualification = () => {
 
                     </div>
 
-                    <div className={toggleState === 2 ? "qualification__content qualification__content-acive" : "qualification__content"}>
+                    {/* <div className={toggleState === 2 ? "qualification__content qualification__content-acive" : "qualification__content"}>
                         <div className="qualification__data">
                             <div>
                                 <h3 className="qualification__title">Bachlor's of Technology</h3>
@@ -142,10 +147,10 @@ const Qualification = () => {
                             </div>
                         </div>
 
-                    </div>
+                    </div> */}
                 </div>
             </div>
-        
+
         </section>
     )
 }
