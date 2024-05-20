@@ -44,7 +44,6 @@ const Qualification = () => {
 
                         <div className="qualification__data">
                             <div></div>
-
                             <div>
                                 <span className="qualification__rounder"></span>
                                 <span className="qualification__line"></span>
@@ -54,21 +53,23 @@ const Qualification = () => {
                                 data-aos-duration="1800"
                                 data-aos-easing="ease-in-out"
                                 data-aos-delay='100'>
+                                <h3 className="qualification__title">Full Stack Web Developer Intern</h3>
+                                <span className="qualification__subtitle">Webstack Academy</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calender"></i>feb 2024 - april 2024
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="qualification__data">
+                            <div data-aos="fade-right"
+                                data-aos-duration="1800"
+                                data-aos-easing="ease-in-out"
+                                data-aos-delay='200'>
                                 <h3 className="qualification__title">12th</h3>
                                 <span className="qualification__subtitle">Vishva Bharti Public School, Jagadhri</span>
                                 <div className="qualification__calender">
                                     <i className="uil uil-calender"></i>2021
-                                </div>
-                            </div>
-
-                        </div>
-
-                        <div className="qualification__data">
-                            <div>
-                                <h3 className="qualification__title">10th</h3>
-                                <span className="qualification__subtitle">Sanatan Dharam Public School, Jagadhri</span>
-                                <div className="qualification__calender">
-                                    <i className="uil uil-calender"></i>2019
                                 </div>
                             </div>
 
@@ -86,16 +87,36 @@ const Qualification = () => {
                                 <span className="qualification__line"></span>
                             </div>
 
-                            <div>
-                                <h3 className="qualification__title">12th</h3>
-                                <span className="qualification__subtitle">Vishva Bharti Public School, Jagadhri</span>
+                            <div data-aos="fade-left"
+                                data-aos-duration="1800"
+                                data-aos-easing="ease-in-out"
+                                data-aos-delay='300'>
+                                <h3 className="qualification__title">Data Analysics Virtual Intern</h3>
+                                <span className="qualification__subtitle">All India Council for Technical Education (AICTE)</span>
                                 <div className="qualification__calender">
-                                    <i className="uil uil-calender"></i>2019 - 2021
+                                    <i className="uil uil-calender"></i>may 2023 - july 2023
                                 </div>
                             </div>
 
                         </div>
 
+                        <div className="qualification__data">
+                            <div data-aos="fade-right"
+                                data-aos-duration="1800"
+                                data-aos-easing="ease-in-out"
+                                data-aos-delay='400'>
+                                <h3 className="qualification__title">10th</h3>
+                                <span className="qualification__subtitle">Sanatan Dharam Public School, Jagadhri</span>
+                                <div className="qualification__calender">
+                                    <i className="uil uil-calender"></i>2019
+                                </div>
+                            </div>
+
+                            <div>
+                                <span className="qualification__rounder"></span>
+                                <span className="qualification__line"></span>
+                            </div>
+                        </div>
                     </div>
 
                     {/* <div className={toggleState === 2 ? "qualification__content qualification__content-acive" : "qualification__content"}>

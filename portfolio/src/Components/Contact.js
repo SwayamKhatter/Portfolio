@@ -26,7 +26,8 @@ const Contact = () => {
     return (
         <section className='contact section' id='contact'>
             <h2 className='section__title'>Get in touch</h2>
-            <span className='section__subtitle'>Contact Me</span>
+            <span className='section__subtitle'>Hello Visitor !! <br/>
+                Thank you for bumping in. If you have any queries/ideas/projects, feel free to PING me.<br/> I am always open for discussion. You can contact me via the Contact Form <br/> OR <br/> Simply click on the social media icon if you are more comfortable there.</span>
 
             <div className='contact__container contaner grid'>
                 <div contact__content>

@@ -10,8 +10,14 @@ const About = ()=> {
             <h2 className="section__title">About Me</h2>
             <span className="section__subtitle">My Introduction</span>
             <div className="about__container container grid">
-              <img src={AboutImg} alt="" className="about__img"></img>
-                <div className="about__data">
+              <img src={AboutImg} alt="" className="about__img"
+              data-aos="fade-right"
+              data-aos-duration="1800"
+              data-aos-easing="ease-in-out"></img>
+                <div className="about__data"
+                data-aos="fade-left"
+                data-aos-duration="1800"
+                data-aos-easing="ease-in-out">
                     <Info/>
                     <p className="about__description">Frontend developer, I create web pages with UI / UX user interface, I have years of experience and many clients are happy with the projects carried out.</p>
                     <a download="" href={CV} className="button button--flex">Download CV
