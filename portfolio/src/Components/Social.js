@@ -10,7 +10,7 @@ const Social = ()=> {
                 <i className="uil uil-linkedin"></i>
             </a>
             <a href="https://github.com/SwayamKhatter" className="home__social-icon" target="_blank" rel="noreferrer">
-                <i className="uiil uil-github-alt"></i>
+                <i className="uil uil-github-alt"></i>
             </a>
         </div>
     )
